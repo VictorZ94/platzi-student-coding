@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .shadow {
+      background-color: lightgray;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .circle {
+      border-radius: 20%;
+      width: 200px;
+      height: 200px;
+      background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    }
+    .circle:hover {
+      transform: skewX(45deg);
+      transform: skewY(45deg);
+      transform: skew(20deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="circle"></div>
+</body>
+</html>
