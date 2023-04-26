@@ -30,12 +30,25 @@
       background: papayawhip;
       transform: rotateX(180deg);
     }
+
+    .flip {
+      transform: rotateY(180deg);
+      backface-visibility: visible;
+      font-size: 5rem;
+      font-weight: 300
+    }
+    .flip.hide-back {
+      backface-visibility: hidden;
+    }
   </style>
 </head>
 <body>
   <div class="card">
     <div class="face front">I'm at front of you</div>
     <div class="face back">I'm at back of you</div>
+
   </div>
+  <div class="flip">text</div>
+  <div class="flip hide-back">text</div>
 </body>
 </html>
