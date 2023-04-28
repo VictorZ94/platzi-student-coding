@@ -41,7 +41,7 @@ build/Release
 
 # Dependency directories
 platzi-travel-tailwind/node_modules/
-platzi-travel-tailwind/packages-lock.json
+platzi-travel-tailwind/package-lock.json
 node_modules/
 jspm_packages/
 
