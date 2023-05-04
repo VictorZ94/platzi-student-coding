@@ -1,0 +1,49 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Así lo haría yo */
+grid-movies {  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Cómo lo sugiere midudev */
+.grid-movies {
+  list-style: none;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.movie {
+  text-align: center;
+}
+
+.movie h2, .movie p {
+  padding: 0;
+}
+
+.movie img {
+  border-radius: 8px;
+  margin-top: 0;
+}
