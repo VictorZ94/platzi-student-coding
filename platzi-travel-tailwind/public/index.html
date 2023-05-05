@@ -10,17 +10,27 @@
   <link rel="stylesheet" href="./css/tailwind.css">
   <title>Platzi Travel</title>
 </head>
-<body>
+<body class="font-Montserrat">
   <header>
     <nav></nav>
     <div id="tabBar"></div>
   </header>
-  <section class="w-full h-screen">
+  <section class="w-full">
     <div id="home">
       <div class="w-full h-3/4">
         <div class="w-full h-full flex space-y-96 py-4 flex-col absolute items-center">
-          <input class="outline-none p-3 rounded-full shadow-sm" type="Search" name="search">
-          <button class="font-semibold p-4 w-36 rounded-full shadow-sm text-primary text-xl bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white">
+          <input
+            class="
+              outline-none p-3 rounded-full shadow-sm
+              focus-within:shadow-sm focus:ring-2 focus:ring-primary focus:w-11/12
+            "
+            placeholder="Search"
+            type="Search"
+            name="search"
+          />
+          <button
+            class="font-semibold p-4 w-36 rounded-full shadow-sm text-primary text-xl bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white"
+          >
             Explorar
           </button>
         </div>
@@ -30,8 +40,8 @@
       </div>
     </div>
     <div class="p-11 md:p-20" id="recomendadas">
-      <p class="text-3xl font-semibold text-primary">Recomendados</p>
-      <div class="w-auto h-72 items-center mt-6 flex overflow-auto overscroll-x-contain space-x-6">
+      <p class="text-3xl font-semibold text-primary">Our Recomendados</p>
+      <div class="w-auto h-72 items-center mt-6 flex overflow-auto overscroll-x-contain overflow-y-hidden space-x-6">
         <div class="card">
           <div class="w-full h-3/5 bg-norway bg-cover rounded-t-lg"></div>
           <div class="w-full h-2/5 bg-secondary text-white px-4 rounded-b-lg">
@@ -55,8 +65,64 @@
         </div>
       </div>
     </div>
-    <div id="rentas_destacadas"></div>
-  </section>
-
+    <div class="px-11 h-full w-full" id="rentas_destacadas">
+      <p class="text-3xl text-primary font-semibold ">Rentas Destacadas</p>
+      <div class="w-full h-full flex flex-col space-y-4 items-center mt-6">
+        <div class="w-full h-96 bg-chicago bg-cover rounded-xl text-white">
+          <p class="card-title">Chicago</p>
+          <p class="text-sm pl-8 mr-24">2 Rooms, bathroom and kitchen.</p>
+        </div>
+        <div class="w-full h-96 bg-LA bg-cover rounded-xl text-white">
+          <p class="card-title">Los Angeles, CA.</p>
+          <p class="text-sm pl-8 mr-24">4 rooms, 3 bathrooms, kitchen and private pool.</p>
+        </div>
+      </div>
+    </div>
+    <div class="px-11 h-full w-full" id="FAQ">
+      <p class="text-3xl text-primary font-semibold">FAQs</p>
+      <div class="flex flex-col space-y-6 mt-6">
+        <div>
+          <p class="text-primary">Política de Cancelación</p>
+          <p class="text-sm">
+            Para estancias menores a una semana es importante avisar con 3 días de
+            anticipación, de caso contario será sancionado.
+          </p>
+        </div>
+        <div>
+          <p class="text-primary">Métodos de pago</p>
+          <p class="text-sm">
+            Aceptamos distintos métodos de pago: VISA, MasterCard, American Express,
+            Paypal y Binance
+          </p>
+        </div>
+        <div>
+          <p class="text-primary">Mascotas</p>
+          <p class="text-sm">El tema de las mascotas dependerá directamente del anfitrión.</p>
+        </div>
+        <div>
+          <p class="text-primary font-medium">Información de Seguridad</p>
+          <p class="text-sm">
+            Todas nuestras estancias cuentan con seguro en caso de accidentes
+          </p>
+        </div>
+        <div>
+          <p class="text-primary">Estancias Largas</p>
+          <p class="text-sm">
+            Contamos con estancias de hasta 3 meses, en este caso es requerido un
+            anticipo con un monto del 50% del valor de la renta
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="w-full mt-6 h-auto bg-gray-50 p-6 space-y-3">
+      <p class="text-lg">Acerca de</p>
+      <p class="text-sm text-gray-300">Investors</p>
+      <p class="text-sm text-gray-300">Jobs</p>
+      <p class="text-sm text-gray-300">Privacy policy</p>
+      <p class="text-sm text-gray-300">Termns and conditions</p>
+      <p class="text-sm text-gray-300">Platzi Travel Inc.</p>
+      <p class="text-sm text-gray-300">Follow us</p>
+    </footer>
+    
 </body>
 </html>
