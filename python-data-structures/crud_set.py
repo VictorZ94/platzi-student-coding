@@ -23,3 +23,6 @@ print(set_countries)
 # discard(): Elimina un elemento y si ya existe no lanza ningún error.
 set_countries.discard('es')
 print(set_countries)
+
+# clear(): Elimina todo el contenido del conjunto.
+print(set_countries.clear())
