@@ -1,7 +1,7 @@
 import random
-dict = {}
+my_dict = {}
 for i in range(1, 11):
-    dict[chr(96+i)] = i
+    my_dict[chr(96+i)] = i
 print(dict)
 
 new_dict = {chr(96+i): i for i in range(1, 11)} 
@@ -14,3 +14,10 @@ for country in countries:
 print(population)
 
 population_v2 = {country: random.randint(1, 100) for country in countries}
+
+names = ['nico', 'zule', 'santi']
+ages = [12, 56, 98]
+print(dict(zip(names, ages)))
+
+print({name: age for (name, age) in zip(names, ages)})
+print({names[i] : ages[i] for i in range(len(names))})
