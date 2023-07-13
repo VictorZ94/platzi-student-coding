@@ -15,3 +15,9 @@ print(unique)
 text2 = 'Hola a todos, esta es una cadena de texto de prueba'
 count_vow = {c: text2.count(c) for c in text2 if c in 'aeiou'}
 print(count_vow)
+
+
+# create a dict sorted by keys
+d = {'a': 1, 'b': 2, 'c': 3}
+sorted_d = {k: d[k] for k in sorted(d)}
+print(sorted_d)
