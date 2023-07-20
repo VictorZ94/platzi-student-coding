@@ -7,6 +7,9 @@ suma = lambda x, y: x + y * 2
 print("Hola 2")
 
 # own error messages
-age = 19
-if age < 18:
-    raise Exception("Don't let us younger 18 years old")
+try:
+    age = 15
+    if age < 18:
+        raise Exception("Don't let us younger 18 years old")
+except Exception as error:
+    print(f"Error: {error}")
